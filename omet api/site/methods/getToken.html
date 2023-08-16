@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get token</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <h1 class="omletapi-title">get API token</h1>
+        <p class="omletapi-description">
+            please do not share your personal token with anyone,
+            <br>otherwise, hackers can access your omlet arcade account!
+            <br>and also do not receive a token from your main account,
+            <br>use accounts specially prepared for creating bots for streams
+        </p>
+    </div>
+    <div class="get-token-div">
+        <h2 class="enter-h2">enter username and password</h2>
+        <input type="text" class="getUsername" id="getUsername" placeholder="username">
+        <input type="password" class="getPassword" id="getPassword" placeholder="password">
+
+        <h3 class="get-token-button" onclick="onClick()">get token</h3>
+        <p class="warg">remember, OmletApi is not the official API of the omlet arcade platform</p>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: rgb(218, 218, 218);
+    }
+    
+    .main-div {
+        background-image: linear-gradient(to bottom right, #72b2ff, #ff6c6c);
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .omletapi-title {
+        padding-top: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    
+    .omletapi-description {
+        padding-top: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(45, 45, 45);
+    }
+    
+    input[type=text],
+    input[type=password] {
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 10px;
+        width: 400px;
+        padding: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        background: #f1f1f1;
+        transition: background-color, 0.3s linear;
+    }
+    
+    input[type=text]:hover,
+    input[type=password]:hover {
+        background-color: #c5c5c5;
+    }
+    
+    .get-token-button {
+        margin-top: 90px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f1f1f1;
+        width: 250px;
+        height: 50px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        transition: background-color, 0.3s linear;
+    }
+    
+    .get-token-button:hover {
+        background-color: #c5c5c5;
+    }
+    
+    .get-token-div {
+        background-color: #ffffff;
+        height: 400px;
+    }
+    
+    .enter-h2 {
+        padding-top: 20px;
+        text-align: center;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    .warg {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif
+    }
+</style>
+
+<script>
+    let onClick = async() => {
+
+        let username = document.getElementById("getUsername").value;
+        let password = document.getElementById("getPassword").value;
+
+        window.location.href = `http://localhost:8080/api/Fh1Ih59jL?username=${username}&password=${password}`;
+    }
+</script>
+
+</html>

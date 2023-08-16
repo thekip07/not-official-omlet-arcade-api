@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <title>OmletAPI</title>
+</head>
+
+<body>
+    <div class="first-border ">
+        <h1 class="omletapi-header ">OmletAPI - alternative OmAPI</h1>
+        <p class="omletapi-description ">OmletAPI allows you to interact with the Omlet Arcade platform,
+            <br>get various information about the streamer. OmletAPI is not official
+            <br>API by Omlet Arcade. You don't need to get a token for private
+            <br>methods, just specify your password in the &password parameter.</p>
+    </div>
+    <h2 class="all-methods-header ">all methods</h2>
+    <div class="methods-border ">
+        <h1 class="discord ">DizzeriX#9775</h1>
+
+        <div class="followers " onclick="getFollowers()">
+            <h3 class="followers-title ">getFollowers</h3>
+        </div>
+
+        <div class="follows " onclick="getFollows()">
+            <h3 class="follows-title ">getFollows</h3>
+        </div>
+
+        <div class="level " onclick="getLevel()">
+            <h3 class="level-title ">getLevel</h3>
+        </div>
+
+        <div class="isOnline " onclick="isOnline()">
+            <h3 class="isOnline-title ">isOnline</h3>
+        </div>
+
+        <div class="isStream " onclick="isStream()">
+            <h3 class="isStream-title ">isStream</h3>
+        </div>
+
+        <div class="isVerified " onclick="isVerified()">
+            <h3 class="isVerified-title ">isVerified</h3>
+        </div>
+
+        <div class="getDescription ">
+            <h3 class="getDescription-title " onclick="getDescription()">getDescription</h3>
+        </div>
+
+        <div class="getBestDonater ">
+            <h3 class="getBestDonater-title " onclick="getBestDonater()">getBestDonater</h3>
+        </div>
+
+        <div class="getBestFan ">
+            <h3 class="getBestFan-title " onclick="getBestFan">getBestFan</h3>
+        </div>
+
+        <div class="getFavoriteCommunity ">
+            <h3 class="getFavoriteCommunity-title " onclick="getFavoriteCommunity()">getFavoriteCommunity</h3>
+        </div>
+
+        <div class="getTeam ">
+            <h3 class="getTeam-title " onclick="getTeam()">getTeam</h3>
+        </div>
+
+        <div class="getHotness ">
+            <h3 class="getHotness-title " onclick="getHotness()">getHotness</h3>
+        </div>
+
+        <div class="getStreamName ">
+            <h3 class="getStreamName-title " onclick="getStreamName()">getStreamName</h3>
+        </div>
+
+        <div class="isMinecraftHost ">
+            <h3 class="isMinecraftHost-title " onclick="isMinecraftHost()">isMinecraftHost</h3>
+        </div>
+    </div>
+
+    <script>
+        function getBestDonater() {
+            window.location.href = "/getBestDonater"
+        }
+
+        function getBestFan() {
+            window.location.href = "/getBestFan"
+        }
+
+        function getDescription() {
+            window.location.href = "/getDescription"
+        }
+
+        function getFavoriteCommunity() {
+            window.location.href = "/getFavoriteCommunity"
+        }
+
+        function getFollowers() {
+            window.location.href = "/getFollowers"
+        }
+
+        function getHotness() {
+            window.location.href = "/getHotness"
+        }
+
+        function getFollows() {
+            window.location.href = "/getFollows"
+        }
+
+        function getLevel() {
+            window.location.href = "/getLevel"
+        }
+
+        function getStreamName() {
+            window.location.href = "/getStreamName"
+        }
+
+        function getTeam() {
+            window.location.href = "/getTeam"
+        }
+
+        function isMinecraftHost() {
+            window.location.href = "/isMinecraftHost"
+        }
+
+        function isOnline() {
+            window.location.href = "/isOnline"
+        }
+
+        function isStream() {
+            window.location.href = "/isStream"
+        }
+
+        function isVerified() {
+            window.location.href = "/isVerified"
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(191, 191, 191);
+        }
+        
+        .first-border {
+            background-image: linear-gradient(to bottom right, #72b2ff, #ff6c6c);
+            height: 360px;
+            border-radius: 20px;
+        }
+        
+        .discord {
+            color: rgb(208, 208, 208);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .omletapi-header {
+            padding-top: 40px;
+            text-align: center;
+            color: rgb(255, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .omletapi-description {
+            padding-top: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        
+        .all-methods-header {
+            text-align: center;
+            color: rgb(85, 85, 85);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .methods-border {
+            background-color: rgb(208, 208, 208);
+            height: 670px;
+        }
+        
+        .followers {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .level {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .followers-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .level-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .follows {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .follows-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .isOnline {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .isOnline-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .isStream {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .isStream-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .isVerified {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .isVerified-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getDescription {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getDescription-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getBestDonater {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getBestDonater-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getBestFan {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getBestFan-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getFavoriteCommunity {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getFavoriteCommunity-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getTeam {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getTeam-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getHotness {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getHotness-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .getStreamName {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .getStreamName-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .isMinecraftHost {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            background-color: #72b2ff;
+            border-radius: 10px;
+        }
+        
+        .isMinecraftHost-title {
+            text-align: center;
+            color: #646464;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body>
+
+</html>
